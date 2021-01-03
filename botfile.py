@@ -4,7 +4,7 @@ import configparser  # импортируем библиотеку
 def path_finder():
     return os.path.dirname(os.path.abspath(__file__))
 def write_to_config(section, name, value):
-    ''' Writing data in config file. Warnings!!! it erases other data '''
+    ''' Writing data in config file'''
     conf = configparser.ConfigParser()
     conf.read('config.ini')
     conf.set(section, name, value)
